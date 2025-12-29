@@ -1,73 +1,48 @@
 ---
 name: "\U0001F6E0️ Contribution Request"
-about: Use this to propose a fix or a specific change you want to work on.
-title: ''
+about: Propose a code change, bug fix, or refactor you want to work on.
+title: CONTRIBUTE
 labels: ''
 assignees: ''
 
 ---
 
-name: 🛠️ Contribution Request
-description: Request to work on a bug fix, improvement, or specific task.
-title: "[CONTRIB]: "
-labels: ["contribution-request"]
-body:
-  - type: markdown
-    attributes:
-      value: |
-        ## 🛡️ PurePy IDE Developer Portal
-        Use this form to request permission to work on a specific part of the codebase. 
-        **Note:** Do not start coding until this request is approved to ensure it aligns with the Pure Python vision.
+**Contributor Information**
+- **Name/Handle:** - **Role:** (e.g., Developer, Tester, UI Designer)
 
-  - type: input
-    id: developer_name
-    attributes:
-      label: Full Name / GitHub Handle
-      placeholder: e.g., @python_master_99
-    validations:
-      required: true
+**Type of Contribution**
+(Pick one: Bug Fix / Feature Implementation / Refactor / Documentation)
 
-  - type: dropdown
-    id: contrib_type
-    attributes:
-      label: What are you contributing?
-      options:
-        - Bug Fix
-        - UI/TUI Polishing
-        - Documentation
-        - Performance Optimization
-        - Refactoring
-    validations:
-      required: true
+**The Problem / Goal**
+A clear and concise description of what you are trying to solve or improve in the IDE.
 
-  - type: textarea
-    id: proposal
-    attributes:
-      label: Detailed Proposal
-      description: What specific part of the IDE are you planning to touch?
-      placeholder: I want to optimize the syntax highlighting engine...
-    validations:
-      required: true
+**Proposed Solution**
+Describe exactly how you plan to change the code. 
+- Which files will you modify?
+- How does this remain "Pure Python"?
+- Does this add any new `pip` dependencies? (List them here).
 
-  - type: input
-    id: dependencies
-    attributes:
-      label: New Dependencies?
-      description: Will this add any new Python packages? (Remember: NO non-Python libs allowed).
-      placeholder: e.g., None or 'rich-pixels'
-    validations:
-      required: false
+**Step-by-Step Implementation Plan**
+1. 
+2. 
+3. 
 
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Development Standards
-      options:
-        - label: I confirm this code is 100% Pure Python.
-          required: true
-        - label: I have read the SECURITY.md regarding version < 0.5.x.
-          required: true
-        - label: I acknowledge this work will be licensed under AGPL v3.0.
-          required: true
-        - label: I will run 'Bandit' and 'Safety' checks before submitting a PR.
-          required: true
+**Verification Plan**
+How will you prove this works and doesn't break the TUI?
+- [ ] Manual test in the terminal.
+- [ ] `Bandit` security scan passed.
+- [ ] `Safety` dependency scan passed.
+
+**Technical Environment**
+- **OS:** (e.g., Windows 11, Ubuntu 22.04, macOS)
+- **Python Version:** (e.g., 3.10+)
+- **Terminal Emulator:** (e.g., Windows Terminal, iTerm2, Kitty)
+
+**Additional Context**
+Add any other context, screenshots of the UI change, or notes about the Textual/Harlequin logic here.
+
+**Legal & Security Agreement**
+By submitting this request, I agree to:
+1. License my work under **AGPL v3.0**.
+2. Follow the **SECURITY.md** guidelines for versions < 0.5.x.
+3. Ensure the code is 100% Python with no binary/C-extensions.
