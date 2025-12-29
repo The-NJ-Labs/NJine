@@ -1,3 +1,3 @@
 # NJine
 
-**IN DEVELOPMENT....**
+**UNDER DEVELOPMENT....**
